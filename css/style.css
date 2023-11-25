@@ -20,48 +20,81 @@ header, main, footer{
 }
 
 
-/* Styling for overskrift og navigasjon i header*/
-header{
-    font-size: 1rem;
-    font-weight: 600;
-    grid-area: header;
+#logo{
+    
 }
 
 
-header nav{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    text-align: center;
-    padding: 1rem 1rem 0 1rem;
-}
-
-
-header nav div{
-    display: flex;
-    gap: 1rem;
-    margin: 1rem 0 0 0;
-    padding: 0;
-}
-
-
-/*Styling for (dame, menn, barn) navbaren*/
-header #topp{
-    display: flex;
+/*Styling for navbaren*/
+header ul.navbar{
     gap: 0.5rem;
     list-style: none;
     font-size: 1rem;
     padding: -1rem;
-    flex-direction: column;
-    
+    text-align: center;
 }
 
-header #topp{
+header ul.navbar a{
     text-decoration: none;
     color: #000;
     display: inline-block;
 }
 
-#topp{
+ul.navbar{
     padding: 0;
+    text-align: center;
+}
+
+
+/*Styling for de gule knappene*/
+.yellow-btn{
+    display: inline-block;
+    padding: 0.5rem;
+    text-decoration: none;
+    background-color: #e6bd43;
+    color: #000;
+    font-weight: 300;
+    margin: 0.5rem 0 0 0;
+    
+   
+}
+
+
+/*Styling for den svarte streken øverst*/
+hr.strek {
+    border: 1px solid #e6bd43;
+    width: 100%;
+    margin: -0.5rem 0 3rem 0;
+} 
+
+
+.company{
+    background-image: ;
+}
+
+
+.clients{
+    background-color: #e6bd43;
+}
+
+
+#go-to-top-btn{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: #fff;
+    background-color: #000;
+}
+
+
+.btn{
+    border-style: solid;
+    color: #000;
+    padding: 0.5rem;
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+.branding{
+    margin-top: 3rem;
 }

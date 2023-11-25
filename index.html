@@ -20,6 +20,7 @@
         <link href="css/font/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <title>Eksamen</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     </head>
     <body>
         <!-- <a href="#main-content" class="skip-to-content">Skip to content</a> skip to content-->
@@ -32,15 +33,21 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="about.html#contact">Contact</a></li>
+                <li><a href="about.html#contact" class="yellow-btn">Contact</a></li>
             </ul>
         </header>
         <main>
             <!--Seksjon for compeling headline-->
             <section>
+                <!--Funnet kode fra W3 schools Link=https://www.w3schools.com/html/html5_video.asp-->
+                <video width="320" height="240" autoplay muted>
+                    <source src="img/mountains.mp4" type="video/mp4">
+                    <source src="img/mountains.mp4" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
                 <h1>Compeling headline</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu sem erat. Duis sollicitudin, risus eget sodales rhoncus, metus justo eleifend massa, id ornare purus massa sed quam. Aenean metus erat, vehicula non urna sed, efficitur euismod metus.</p>
-                <a href="#our-services">Read more about our services</a>
+                <a href="#our-services" class="yellow-btn">Read more about our services</a>
             </section>
             <!--Seksjon for enganging subheading-->
             <section>
@@ -89,6 +96,8 @@
                     <input type="text" id="email-signup">
                     <input type="submit" value="Sign me up">
             </section>
+            <!--Kode funnet på W3 schools Link=https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+            <button onclick="topFunction()" id="go-to-top-btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
         </main>
         <footer>
             <a href="index.html" id="logo"><img src="img/logo1.png" alt="Logo for min bedrift"></a>
@@ -99,8 +108,6 @@
                 <li id="instagram" class="fa-brands fa-square-instagram"></i>
                 <li id="linked in" class="fa-brands fa-linkedin"></i>
             </ul>
-            <!--Kode funnet på W3 schools Link=https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
-            <button onclick="topFunction()" id="go-to-top-btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
         </footer>
         </div>
     </body>
