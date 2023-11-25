@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta name="author" content="Mina Molvik Engen">
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHYP77EJaZhPMwBnYfdfNFF4Kvi7qmbYk&callback=console.debug&libraries=maps,marker&v=beta">
+        </script>
         <!--Meta-tags !!!!!MÅ ENDRE!!!!!-->
         <meta property="og:url" content="https://itstud.hiof.no/~miname/oblig_3/" />
         <meta property="og:type" content="website" />
@@ -87,7 +89,7 @@
                    <form action="/action_page.php">
                     <label for="name">Name</label><br>
                     <input type="text" id="name" name="name" value="Ola Nordmann.."><br>
-                    <label for="lname">Subject</label><br>
+                    <label for="subject">Subject</label><br>
                     <input type="text" id="subject" name="subject" value="Branding.."><br><br>
                     <label for="message">Message</label><br>
                     <input type="text" id="message" name="message" value=""><br>
@@ -105,19 +107,10 @@
             </section>
             <!--Seksjon for google maps-->
             <section class="maps">
-                <div id="googleMap" style="width:100%;height:400px;"></div>
-
-<script>
-function myMap() {
-var mapProp= {
-  center:new google.maps.LatLng(51.508742,-0.120850),
-  zoom:5,
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-</script>
-
-<script src="https://maps.app.goo.gl/EU9wBSweqDARsJJ8A"></script>
+                <gmp-map center="59.12920379638672,11.352910995483398" zoom="14" map-id="DEMO_MAP_ID">
+                    <gmp-advanced-marker position="59.12920379638672,11.352910995483398" title="My location">
+                    </gmp-advanced-marker>
+                </gmp-map>
             </section>
         </main>
         <footer>
