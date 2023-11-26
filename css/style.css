@@ -12,7 +12,7 @@ body{
 
 
 header, main, footer{
-    padding: 1rem;
+    padding: noen;
 }
 
 .front-page{
@@ -55,8 +55,6 @@ ul.navbar{
     color: #000;
     font-weight: 300;
     margin: 0.5rem 0 0 0;
-    
-   
 }
 
 
@@ -72,21 +70,27 @@ hr.strek {
     background-image: ;
 }
 
-
+/*Bakgrunnsfarge bak "Some of pur clients" på about siden*/
 .clients{
     background-color: #e6bd43;
 }
 
+.about-our-company{
+    background-color: #e6bd43;
+    padding: ;
+}
 
+/*Go to top knapp på alle sidene*/
 #go-to-top-btn{
     position: fixed;
     bottom: 1rem;
     right: 1rem;
     color: #fff;
     background-color: #000;
+    cursor: pointer;
 }
 
-
+/*Knapp med svart kant på portfolio siden*/
 .btn{
     border-style: solid;
     color: #000;
@@ -94,7 +98,42 @@ hr.strek {
     text-decoration: none;
     margin: 0.5rem;
 }
-
+ /*Avstand fra overskrift til knappene over på portfolio siden*/
 .branding{
     margin-top: 3rem;
+}
+
+
+footer section.footer-desktop{
+    display: none;
+}
+
+
+
+@media only screen and (min-width:600px){
+    #grid-container{
+        grid-template-areas: "header header header" ". main ." "footer footer footer";
+    }
+
+    header, main, footer{
+        padding: 1rem;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+    }
+
+    /**/
+    footer section.footer-desktop{
+        display: flex;
+        gap: 0.5rem;
+        list-style: none;
+        font-size: 1rem;
+        padding: -1rem;
+        flex-direction: column;
+    }
 }
