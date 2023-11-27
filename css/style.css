@@ -117,6 +117,7 @@ footer section.footer-desktop{
 
     header, main, footer{
         padding: 1rem;
+        text-align: center;
     }
 
     .navbar{
@@ -125,6 +126,12 @@ footer section.footer-desktop{
         gap: 1rem;
         list-style: none;
         margin: 0;
+    }
+
+    main.headline{
+        text-align: center;
+        background-clip: url("img/mountains.mp4");
+        background-size: cover;
     }
 
     /**/
