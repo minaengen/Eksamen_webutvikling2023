@@ -47,16 +47,7 @@ ul.navbar{
 }
 
 
-/*Styling for de gule knappene*/
-.yellow-btn{
-    display: inline-block;
-    padding: 0.5rem;
-    text-decoration: none;
-    background-color: #e6bd43;
-    color: #000;
-    font-weight: 300;
-    margin: 0.5rem 0 0 0;
-}
+
 
 
 .video{
@@ -64,12 +55,7 @@ ul.navbar{
 }
 
 
-/*Styling for den svarte streken øverst*/
-hr.strek {
-    border: 1px solid #e6bd43;
-    width: 63%;
-    margin: -0.5rem 0 3rem 7.3rem;
-} 
+
 
 
 /*Bakgrunnsfarge bak "Some of pur clients" på about siden*/
@@ -81,14 +67,32 @@ hr.strek {
     background-color: #e6bd43;
 }
 
+/*Styling for den svarte streken øverst*/
+hr.strek {
+    border: 1px solid #e6bd43;
+    width: 63%;
+    margin: -0.5rem 0 3rem 7.3rem;
+} 
+
 /*Go to top knapp på alle sidene*/
 #go-to-top-btn{
     position: fixed;
     bottom: 1rem;
     right: 1rem;
     color: #fff;
-    background-color: #000;
+    background-color: #252525;
     cursor: pointer;
+}
+
+/*Styling for de gule knappene*/
+.yellow-btn{
+    display: inline-block;
+    padding: 0.5rem;
+    text-decoration: none;
+    background-color: #e6bd43;
+    color: #000;
+    font-weight: 300;
+    margin: 0.5rem 0 0 0;
 }
 
 /*Knapp med svart kant på portfolio siden*/
@@ -99,6 +103,7 @@ hr.strek {
     text-decoration: none;
     margin: 0.5rem;
 }
+
  /*Avstand fra overskrift til knappene over på portfolio siden*/
 .branding{
     margin-top: 3rem;
@@ -111,9 +116,18 @@ footer{
 }
 
 
+/*Ikonene for sosiale medier i bunnen av sidene*/
+ul#social-icons{
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+
+
 footer section.footer-desktop{
     display: none;
 }
+
 
 
 
@@ -149,5 +163,19 @@ footer section.footer-desktop{
         font-size: 1rem;
         padding: -1rem;
         flex-direction: column;
+    }
+    .footer.img{
+        width: 210px;
+    }
+
+    footer p{
+        font-size: 20px;
+        padding: 10rem 2rem 0rem 2rem;
+    }
+
+    footer section{
+        display: flex;
+        justify-content: space-between;
+        padding: 13rem 5rem 3rem 5rem;
     }
 }
