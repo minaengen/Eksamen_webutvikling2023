@@ -2,6 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fff;
     min-width: 585px;
+    text-align: center;
 }
 
 
@@ -58,17 +59,18 @@ ul.navbar{
 }
 
 
+.video{
+    padding: 0;
+}
+
+
 /*Styling for den svarte streken øverst*/
 hr.strek {
     border: 1px solid #e6bd43;
-    width: 100%;
-    margin: -0.5rem 0 3rem 0;
+    width: 63%;
+    margin: -0.5rem 0 3rem 7.3rem;
 } 
 
-
-.company{
-    background-image: ;
-}
 
 /*Bakgrunnsfarge bak "Some of pur clients" på about siden*/
 .clients{
@@ -77,7 +79,6 @@ hr.strek {
 
 .about-our-company{
     background-color: #e6bd43;
-    padding: ;
 }
 
 /*Go to top knapp på alle sidene*/
@@ -101,6 +102,12 @@ hr.strek {
  /*Avstand fra overskrift til knappene over på portfolio siden*/
 .branding{
     margin-top: 3rem;
+}
+
+
+footer{
+    background-color: #252525;
+    color: #fff;
 }
 
 
@@ -130,7 +137,7 @@ footer section.footer-desktop{
 
     main.headline{
         text-align: center;
-        background-clip: url("img/mountains.mp4");
+        background-image: url("img/mountains.mp4");
         background-size: cover;
     }
 
