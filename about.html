@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta name="author" content="Mina Molvik Engen">
-        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHYP77EJaZhPMwBnYfdfNFF4Kvi7qmbYk&callback=console.debug&libraries=maps,marker&v=beta">
+        <!--Brukt kode fra Google maps api - generert egen api key-->
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT0lvSDGLkZiPcQBYoWextrwFd5qS7V78&callback=console.debug&libraries=maps,marker&v=beta">
         </script>
         <!--Meta-tags !!!!!MÅ ENDRE!!!!!-->
         <meta property="og:url" content="https://itstud.hiof.no/~miname/oblig_3/" />
@@ -84,28 +85,29 @@
                 <img src="img/logo3.png" alt="Logo for en annen klient">
             </section>
             <!--Seksjon for contact us-->
-            <section class="contact">
+            <section class="contact-form">
                 <h2><a id="contact"></a>Contact us</h2>
-                <h3>Send us a message</h3>
-                <!--Artikkel for form-->
+                 <!--Artikkel for form-->
                 <article class="form-send-message">
+                <h3>Send us a message</h3>
                    <form action="/action_page.php">
                     <label for="name">Name</label><br>
                     <input type="text" id="name" name="name" value="Ola Nordmann.."><br>
                     <label for="subject">Subject</label><br>
                     <input type="text" id="subject" name="subject" value="Branding.."><br><br>
                     <label for="message">Message</label><br>
-                    <input type="text" id="message" name="message" value=""><br>
+                    <textarea id="message" name="message" rows="4" cols="40"></textarea>
+                    <br>
                     <a href="#" class="yellow-btn">Send message</a>
                   </form>  
                 </article>
                 <!--Artikkel for kontaktinformasjon-->
-                <article>
+                <article class="contact">
                     <h3>Contact information</h3>
                     <p>Donec quis finibus orci, vel rutrum neque. Nullam quis erat pellentesque, viverra magna quis, mollis lectus. Nullam nulla urna, aliquet rutrum felis luctus, blandit lobortis diam.</p>
-                    <i class="fa-solid fa-location-dot"></i><p>B R A Veien 4, 1757 Halden</p>
-                    <i class="fa-solid fa-phone"></i><p>69 60 80 00</p>
-                    <i class="fa-solid fa-envelope"></i><a href="#">postmottak@hiof.no</a>
+                    <p><i class="fa-solid fa-location-dot"></i> B R A Veien 4, 1757 Halden<br><br>
+                    <i class="fa-solid fa-phone"></i> 69 60 80 00<br><br>
+                    <i class="fa-solid fa-envelope"></i><a href="#"> postmottak@hiof.no</a></p>
                 </article>
             </section>
             <!--Seksjon for google maps-->

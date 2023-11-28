@@ -161,6 +161,34 @@ hr.strek {
     margin-top: 3rem;
 }
 
+main section.contact-form{
+    background-color: #efefef;
+    height: 400px;
+    padding:10px;
+   
+}
+
+
+main section article.form-send-message{
+    float:left;
+    text-align: center;
+    width:50%;
+       
+}
+
+main section article.contact{
+    float:right;
+   text-align: center;
+    width:50%;
+
+
+}
+
+    main section.maps{
+        background-color: #00000;
+        padding: noe;
+        height: 200px;
+    }
 
 footer{
     grid-area: footer;
@@ -386,6 +414,35 @@ footer section.footer-desktop{
     .default-flex3 article img {
         width: 80%;
     }
+
+    main section.contact-form{
+        background-color: #efefef;
+        height: 400px;
+        padding:10px;
+       
+    }
+    
+    
+    main section article.form-send-message{
+        float:left;
+        text-align: left;
+        width:50%;
+           
+    }
+    
+    main section article.contact{
+        float:right;
+       text-align: left;
+        width:50%;
+    
+    
+    }
+    
+        main section.maps{
+            background-color: #00000;
+            padding: noe;
+            height: 200px;
+        }
 
     /**/
     footer section.footer-desktop{
