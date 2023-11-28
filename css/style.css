@@ -41,6 +41,7 @@ header ul.navbar a{
     display: inline-block;
 }
 
+
 ul.navbar{
     padding: 0;
     text-align: center;
@@ -48,14 +49,24 @@ ul.navbar{
 
 
 
-
-
 .video{
     padding: 0;
 }
 
+/*Funker ikke, fant kode fra tidligere arbeid i emnet*/
+main section.portfolio{
+    text-align: center;
+    background-image: url("img/office.jpg");
+    background-size: cover;
+    padding: 0 0 1rem 0;
+}
 
 
+/*Styling for innholdet under overskrift bildet på portfolio siden*/
+main section.portfolio2{
+    text-align: left;
+    padding: 0 0 0 8rem;
+}
 
 
 /*Bakgrunnsfarge bak "Some of pur clients" på about siden*/
@@ -70,8 +81,8 @@ ul.navbar{
 /*Styling for den svarte streken øverst*/
 hr.strek {
     border: 1px solid #e6bd43;
-    width: 63%;
-    margin: -0.5rem 0 3rem 7.3rem;
+    width: 78%;
+    margin: -0.5rem 0 3rem 0rem;
 } 
 
 /*Go to top knapp på alle sidene*/
