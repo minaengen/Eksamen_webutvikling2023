@@ -52,10 +52,34 @@ main{
     grid-area: main;
 }
 
-
-/*Slik at video på forsiden ikke syntes i mobilversjon*/
-#myVideo{
+/*Skjuler videoen*/
+main section.headline-desktop{
     display: none;
+}
+
+/*Style på bil*/
+main section.headline-mobile{
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    overflow: hidden;
+    max-height: 400px;
+    height: 400px;
+    width: 100%;
+}
+
+
+#img-office{
+    width: 600px;
+    opacity: 0.3;
+}
+
+main section article.img-section-content{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+
 }
 
 
@@ -164,8 +188,13 @@ footer section.footer-desktop{
         grid-template-areas: "header header header" "main main main" "footer footer footer";
     }
 
-    header, main, footer{
+    header{
         padding: 1rem;
+        text-align: center;
+    }
+
+    main, footer{
+        padding: none;
         text-align: center;
     }
 
@@ -183,6 +212,7 @@ footer section.footer-desktop{
         gap: 1rem;
         list-style: none;
         margin: 1rem;
+        
     }
 
     #logo{
@@ -199,46 +229,77 @@ footer section.footer-desktop{
         float: right;
     }
 
+/**/
+    main section.headline-mobile{
+        display: none;
+    }
 
-    main section.headline{
+    main section.headline-desktop{
         position: relative;
         display: inline-block;
+        background-color: yellow;
         overflow: hidden;
         max-height: 400px;
         height: 400px;
         width: 100%;
     }
 
-    #img-office{
-        display: none;
-    }
 
     #myVideo{
-        width: 1600px;
+            width: 100%;
+            min-width: 730px;
     }
+
 
     main section article.video-section-content{
         position: absolute;
-        top: 50%;
+        top: 30%;
         width: 100%;
         text-align: center;
 
     }
 
+
+    /*Noe feil med teksten til videoen*/
+    main section article.video-section-content{
+        padding: 1rem;
+    }
+
+    /*Slik at yeksten får padding på sidene*/
+    main section.subheading{
+        padding: 0 15rem 0 15rem;
+    }
+
     main section.about-our-company{
         background-color: #e6bd43;
         padding: 2rem;
-        height: 400px;
+        height: 300px;
     }
 
     /*Style for å få placeholder på forsiden til å ligge riktig*/
     #placeholder{
         float: left;
-        width: 250px;
+        width: 300px;
+        padding: 0 2rem 0 0;
     }
 
 
+    main section article.text-about-company{
+        text-align: left;
+    }
 
+    #our-services{
+        text-align: center;
+    }
+
+    #text-services{
+        padding: 0 1rem 0 1rem;
+    }
+
+    main section article.services{
+        display: inline-block;
+        
+    }
 
 
 
