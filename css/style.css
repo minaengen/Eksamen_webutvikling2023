@@ -283,6 +283,12 @@ footer section.footer-desktop{
         padding: 0 2rem 0 0;
     }
 
+    /*Styling for de gule strekene på portfolio siden*/
+    hr.strek {
+        border: 1px solid #e6bd43;
+        margin: -0.5rem 0 3rem 0rem;
+    } 
+
 
     main section article.text-about-company{
         text-align: left;
@@ -302,6 +308,84 @@ footer section.footer-desktop{
     }
 
 
+    .container{
+        flex-direction: row;
+    }
+
+    /*Setter opp en flex-container*/
+    .default-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /*Gjelder for h3 inni elementer med klassen 'default-flex'.*/
+    .default-flex h3 {
+        flex-basis: 100%;
+    }
+
+    /*Gjelder for artikkel-elementer inne i elementer med klassen 'default-flex'*/
+    .default-flex article {
+        flex-basis: 33%;
+        min-width: 300px;
+        flex-grow: 3;
+    }
+
+    /*Gjelder for bilder inne i artikkel-elementer.
+    Setter bredden til bildet til 100% av forelder-elementet. */
+    .default-flex article img {
+        width: 80%;
+    }
+
+        /*Setter opp en flex-container*/
+    .default-flex2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /*Gjelder for h3 inni elementer med klassen 'default-flex'.*/
+    .default-flex2 h3 {
+        flex-basis: 100%;
+    }
+
+    /*Gjelder for artikkel-elementer inne i elementer med klassen 'default-flex'*/
+    .default-flex2 article {
+        flex-basis: 33%;
+        min-width: 300px;
+        flex-grow: 3;
+    }
+
+    /*Gjelder for bilder inne i artikkel-elementer.
+    Setter bredden til bildet til 100% av forelder-elementet. */
+    .default-flex2 article img {
+        width: 80%;
+    }
+
+    /*Setter opp en flex-container*/
+    .default-flex3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /*Gjelder for h3 inni elementer med klassen 'default-flex'.*/
+    .default-flex3 h3 {
+        flex-basis: 100%;
+    }
+
+    /*Gjelder for artikkel-elementer inne i elementer med klassen 'default-flex'*/
+    .default-flex3 article {
+        flex-basis: 50%;
+        min-width: 250px;
+        flex-grow: 3;
+    }
+
+    /*Gjelder for bilder inne i artikkel-elementer.
+    Setter bredden til bildet til 100% av forelder-elementet. */
+    .default-flex3 article img {
+        width: 80%;
+    }
 
     /**/
     footer section.footer-desktop{
