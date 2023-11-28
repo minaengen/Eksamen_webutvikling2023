@@ -13,7 +13,11 @@ body{
 
 
 header, main, footer{
-    padding: noen;
+    padding: none;
+}
+
+header{
+    grid-area: header;
 }
 
 .front-page{
@@ -43,10 +47,17 @@ ul.navbar{
     text-align: center;
 }
 
+/*Grid*/
+main{
+    grid-area: main;
+}
+
+
 /*Slik at video på forsiden ikke syntes i mobilversjon*/
 #myVideo{
     display: none;
 }
+
 
 
 /*Funker ikke, fant kode fra tidligere arbeid i emnet. Styling for portfolio bildet*/
@@ -74,7 +85,7 @@ main section.newsletter{
 }
 
 
-/*Bakgrunnsfarge bak "Some of pur clients" på about siden*/
+/*Bakgrunnsfarge bak "Some of our clients" på about siden*/
 .clients{
     background-color: #e6bd43;
     padding: 2rem;
@@ -85,7 +96,7 @@ main section.newsletter{
     padding: 2rem;
 }
 
-/*Styling for den svarte streken øverst*/
+/*Styling for de gule strekene på portfolio siden*/
 hr.strek {
     border: 1px solid #e6bd43;
     margin: -0.5rem 0 3rem 0rem;
@@ -128,6 +139,7 @@ hr.strek {
 
 
 footer{
+    grid-area: footer;
     background-color: #252525;
     color: #fff;
     padding: 2rem;
@@ -149,11 +161,19 @@ footer section.footer-desktop{
 
 @media only screen and (min-width:600px){
     #grid-container{
-        grid-template-areas: "header header header" ". main ." "footer footer footer";
+        grid-template-areas: "header header header" "main main main" "footer footer footer";
     }
 
     header, main, footer{
         padding: 1rem;
+        text-align: center;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #fff;
+        min-width: 585px;
+        max-width: 1600px;
         text-align: center;
     }
 
@@ -162,7 +182,21 @@ footer section.footer-desktop{
         flex-direction: row;
         gap: 1rem;
         list-style: none;
-        margin: 0;
+        margin: 1rem;
+    }
+
+    #logo{
+        float: left;
+    }
+    
+    /*Styling for navbaren*/
+    header ul.navbar{
+        gap: 0.5rem;
+        list-style: none;
+        font-size: 1rem;
+        padding: -1rem;
+        text-align: center;
+        float: right;
     }
 
 
@@ -190,6 +224,23 @@ footer section.footer-desktop{
         text-align: center;
 
     }
+
+    main section.about-our-company{
+        background-color: #e6bd43;
+        padding: 2rem;
+        height: 400px;
+    }
+
+    /*Style for å få placeholder på forsiden til å ligge riktig*/
+    #placeholder{
+        float: left;
+        width: 250px;
+    }
+
+
+
+
+
 
     /**/
     footer section.footer-desktop{
