@@ -21,10 +21,6 @@ header, main, footer{
 }
 
 
-#logo{
-    
-}
-
 
 /*Styling for navbaren*/
 header ul.navbar{
@@ -47,13 +43,13 @@ ul.navbar{
     text-align: center;
 }
 
-
-
-.video{
-    padding: 0;
+/*Slik at video på forsiden ikke syntes i mobilversjon*/
+#myVideo{
+    display: none;
 }
 
-/*Funker ikke, fant kode fra tidligere arbeid i emnet*/
+
+/*Funker ikke, fant kode fra tidligere arbeid i emnet. Styling for portfolio bildet*/
 main section.portfolio{
     text-align: center;
     background-image: url("img/office.jpg");
@@ -65,23 +61,33 @@ main section.portfolio{
 /*Styling for innholdet under overskrift bildet på portfolio siden*/
 main section.portfolio2{
     text-align: left;
-    padding: 0 0 0 8rem;
+    margin: 2rem 8rem 2rem 8rem;
+}
+
+#icon{
+    font-size: 150%;
+}
+
+main section.newsletter{
+    background-color: #efefef;
+    padding: 2rem;
 }
 
 
 /*Bakgrunnsfarge bak "Some of pur clients" på about siden*/
 .clients{
     background-color: #e6bd43;
+    padding: 2rem;
 }
 
 .about-our-company{
     background-color: #e6bd43;
+    padding: 2rem;
 }
 
 /*Styling for den svarte streken øverst*/
 hr.strek {
     border: 1px solid #e6bd43;
-    width: 78%;
     margin: -0.5rem 0 3rem 0rem;
 } 
 
@@ -124,6 +130,7 @@ hr.strek {
 footer{
     background-color: #252525;
     color: #fff;
+    padding: 2rem;
 }
 
 
@@ -138,8 +145,6 @@ ul#social-icons{
 footer section.footer-desktop{
     display: none;
 }
-
-
 
 
 @media only screen and (min-width:600px){
@@ -160,10 +165,30 @@ footer section.footer-desktop{
         margin: 0;
     }
 
-    main.headline{
+
+    main section.headline{
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        max-height: 400px;
+        height: 400px;
+        width: 100%;
+    }
+
+    #img-office{
+        display: none;
+    }
+
+    #myVideo{
+        width: 1600px;
+    }
+
+    main section article.video-section-content{
+        position: absolute;
+        top: 50%;
+        width: 100%;
         text-align: center;
-        background-image: url("img/mountains.mp4");
-        background-size: cover;
+
     }
 
     /**/
