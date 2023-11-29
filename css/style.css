@@ -182,7 +182,6 @@ main section.newsletter{
 
 
 
-
 .about-our-company{
     background-color: #e6bd43;
     padding: 2rem;
@@ -250,10 +249,6 @@ main section article.contact{
     width:100%;
 
 }
-
-
-
-
 
 
 main section.maps{
@@ -443,7 +438,7 @@ footer section.footer-desktop{
         display: inline-block;
         
     }
-    /*Style for hvordan teksten skal ligge over bildet på about siden*/
+    /*Style for hvordan teksten og tekstboksen skal ligge over bildet på about siden*/
     main section article.company-text{
         position: absolute;
         top: 15%;
@@ -452,8 +447,8 @@ footer section.footer-desktop{
         background: rgba(192, 192, 192, 0.9);
         color: #000;
         right: 0;
-        padding: 1rem;
-        margin: 0 1rem 0 0;
+        padding: 0 0 0 1rem;
+        margin: 0 2rem 2rem 0;
     }
 
 
@@ -577,9 +572,6 @@ footer section.footer-desktop{
     }
 
     
-
-
-
     /*Ikonene for sosiale medier i bunnen av sidene*/
     #social-icons{
         padding: 0;
