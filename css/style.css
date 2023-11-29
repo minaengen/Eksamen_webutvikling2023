@@ -52,12 +52,12 @@ main{
     grid-area: main;
 }
 
-/*Skjuler videoen*/
+/*Skjuler videoen på index siden*/
 main section.headline-desktop{
     display: none;
 }
 
-/*Style på bil*/
+/*Style på bildet på index siden*/
 main section.headline-mobile{
     position: relative;
     display: inline-block;
@@ -69,9 +69,10 @@ main section.headline-mobile{
 }
 
 
+/*Slik at bildet på index siden skal være helt ute til kantene på mobilversjon, og at bildet blir litt lysere*/
 #img-office{
     width: 600px;
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 main section article.img-section-content{
@@ -79,8 +80,55 @@ main section article.img-section-content{
     top: 30%;
     width: 100%;
     text-align: center;
-
 }
+
+
+/*Style på bildet på about siden*/
+main section.company{
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    overflow: hidden;
+    max-height: 400px;
+    height: 400px;
+    width: 100%;
+}
+
+
+main section article.company-text{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: left;
+}
+
+
+/*Style på bildet på index siden*/
+main section.portfolio{
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    overflow: hidden;
+    max-height: 400px;
+    height: 400px;
+    width: 100%;
+}
+
+/*Slik at bildet på portfolio siden skal være helt ute til kantene, og at bildet blir litt lysere*/
+#img-office3{
+    width: 100%;
+    opacity: 0.4;
+}
+
+
+main section article.portfolio2{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+    
 
 
 
@@ -99,9 +147,11 @@ main section.portfolio2{
     margin: 2rem 8rem 2rem 8rem;
 }
 
+/*Størrelse på ikonene*/
 #icon{
     font-size: 150%;
 }
+
 
 main section.newsletter{
     background-color: #efefef;
@@ -184,11 +234,11 @@ main section article.contact{
 
 }
 
-    main section.maps{
-        background-color: #00000;
-        padding: noe;
-        height: 200px;
-    }
+main section.maps{
+    background-color: #00000;
+    padding: noe;
+    height: 200px;
+}
 
 footer{
     grid-area: footer;
@@ -203,6 +253,7 @@ ul#social-icons{
     padding: 0;
     margin: 0;
     font-size: 30px;
+    color: #fff;
 }
 
 
@@ -239,9 +290,9 @@ footer section.footer-desktop{
         flex-direction: row;
         gap: 1rem;
         list-style: none;
-        margin: 1rem;
-        
+        margin: 4rem 0 0 0;
     }
+
 
     #logo{
         float: left;
@@ -257,7 +308,7 @@ footer section.footer-desktop{
         float: right;
     }
 
-/**/
+    /*For at bildet på mobilversjonen skal bli borte*/
     main section.headline-mobile{
         display: none;
     }
@@ -415,36 +466,41 @@ footer section.footer-desktop{
         width: 80%;
     }
 
+
+    /*Slik at bildet på about siden på desktop skal være helt ut til kanten*/
+    #img-office2{
+        width: 100%;
+    }
+
+
     main section.contact-form{
         background-color: #efefef;
         height: 400px;
         padding:10px;
-       
     }
     
     
     main section article.form-send-message{
         float:left;
         text-align: left;
-        width:50%;
-           
+        width:50%;  
     }
     
+
     main section article.contact{
         float:right;
        text-align: left;
         width:50%;
-    
-    
     }
     
-        main section.maps{
-            background-color: #00000;
-            padding: noe;
-            height: 200px;
-        }
+    main section.maps{
+        background-color: #00000;
+        padding: noe;
+        height: 200px;
+    }
 
-    /**/
+
+    /*Footer for desktopversjonen*/
     footer section.footer-desktop{
         display: flex;
         gap: 0.5rem;
@@ -453,14 +509,18 @@ footer section.footer-desktop{
         padding: -1rem;
         flex-direction: column;
     }
+
+
     .footer.img{
         width: 210px;
     }
+
 
     footer p{
         font-size: 20px;
         padding: 10rem 2rem 0rem 2rem;
     }
+
 
     footer section{
         display: flex;
