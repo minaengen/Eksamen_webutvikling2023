@@ -357,10 +357,10 @@ footer section.footer-desktop{
         display: none;
     }
 
+    /*Styling for videoen under overskriften på index siden*/
     main section.headline-desktop{
         position: relative;
         display: inline-block;
-        background-color: yellow;
         overflow: hidden;
         max-height: 400px;
         height: 400px;
@@ -373,7 +373,7 @@ footer section.footer-desktop{
             min-width: 730px;
     }
 
-
+    /*Styling for teksten over videoen på index siden. Så på W3 schools. Lenke=https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_center*/
     main section article.video-section-content{
         position: absolute;
         top: 30%;
