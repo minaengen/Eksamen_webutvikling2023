@@ -218,6 +218,13 @@ hr.strek {
     margin: 0.5rem 0 0 0;
 }
 
+/*Styling for de gule knappene*/
+a.active-link{
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.5rem 0 0 0;
+}
+
 /*Knapp med svart kant på portfolio siden*/
 .btn{
     border-style: solid;
@@ -234,7 +241,7 @@ hr.strek {
 
 main section.contact-form{
     background-color: #efefef;
-    height: 100%;
+    height: 600px;
     padding:10px;
    
 }
