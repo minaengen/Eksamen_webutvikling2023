@@ -152,7 +152,17 @@ main section.portfolio2{
 }
 
 /*Størrelse på ikonene*/
-#icon{
+#icon1{
+    font-size: 150%;
+}
+
+/*Størrelse på ikonene*/
+#icon2{
+    font-size: 150%;
+}
+
+/*Størrelse på ikonene*/
+#icon3{
     font-size: 150%;
 }
 
@@ -327,6 +337,10 @@ footer section.footer-desktop{
     #logo{
         float: left;
     }
+
+    #logo2{
+        float: left;
+    }
     
     /*Styling for navbaren*/
     header ul.navbar{
@@ -410,6 +424,18 @@ footer section.footer-desktop{
     }
 
     #text-services{
+        padding: 0 1rem 0 1rem;
+    }
+
+    #text-services1{
+        padding: 0 1rem 0 1rem;
+    }
+
+    #text-services2{
+        padding: 0 1rem 0 1rem;
+    }
+
+    #text-services3{
         padding: 0 1rem 0 1rem;
     }
 
@@ -542,21 +568,20 @@ footer section.footer-desktop{
         padding: noe;
         height: 200px;
     }
-
-
-    /*Footer for desktopversjonen*/
-    footer section.footer-desktop{
-        display: flex;
-        gap: 0.5rem;
-        list-style: none;
-        font-size: 1rem;
-        padding: -1rem;
-        flex-direction: column;
+    
+/*Footer for desktopversjonen*/
+    footer section.footer-section{
+        background-color: #252525;
+        height: 200px;
+        padding:10px;
     }
+
+    
+
 
 
     /*Ikonene for sosiale medier i bunnen av sidene*/
-    ul#social-icons{
+    #social-icons{
         padding: 0;
         margin: 0 0 10rem 0;
         font-size: 30px;
@@ -580,4 +605,6 @@ footer section.footer-desktop{
         justify-content: space-between;
         padding: 13rem 5rem 3rem 5rem;
     }
+
+    
 }
