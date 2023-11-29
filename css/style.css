@@ -172,6 +172,10 @@ main section.newsletter{
     padding: 2rem;
 }
 
+#email-signup1{
+    background-color: #e6bd43;
+}
+
 
 /*Bakgrunnsfarge bak "Some of our clients" på about siden*/
 .clients{
